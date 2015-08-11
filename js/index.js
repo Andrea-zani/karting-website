@@ -19,16 +19,19 @@ $(document).ready(menuIcon);
 
 //DELAY FOR THE NAME ANIAMATION OF THE FIRST SLIDE
 $(document).ready(function() {
-  $("#name").delay(1000).fadeIn();
-  $("#name").delay(3700).fadeOut();
+  titleAnimate();
 });
 
 $(document).ready(function() {
   setInterval(function() {
-  $("#name").fadeIn(1000);
-  $("#name").delay(3700).fadeOut();
+  titleAnimate();
 }, 20450);
 });
+
+function titleAnimate() {
+    $("#name").fadeIn(1000);
+    $("#name").delay(3700).fadeOut();
+}
 
 //END OF SCRIPT
 
@@ -100,6 +103,10 @@ $(window).bind('scroll', function () {
 
             clearInterval(mytime);
             mytime = setInterval(Timer, IntSeconds * 1000);
+
+            if (nrShown == 0) {
+                titleAnimate();
+            }
         }
 
         function prev()
@@ -111,6 +118,10 @@ $(window).bind('scroll', function () {
 
             clearInterval(mytime);
             mytime = setInterval(Timer, IntSeconds * 1000);
+
+            if (nrShown == 0) {
+                titleAnimate();
+            }
         }
         //here changes the img + effect
         function Effect()
@@ -129,6 +140,6 @@ $(window).bind('scroll', function () {
             document.getElementById("SP" + nrShown).style.visibility = "visible";
         }
 
-       
+
 
 //END FULLSCREEN SLIDER SCRIPT
