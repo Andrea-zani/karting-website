@@ -1,0 +1,118 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700);
+@import url(http://fonts.googleapis.com/css?family=Poiret+One);
+@import url(http://fonts.googleapis.com/css?family=Nixie+One);
+@import url(http://fonts.googleapis.com/css?family=Fugaz+One);
+html, body {
+  margin: 0;
+  padding: 0; }
+
+#wrappermenu {
+  width: 100%;
+  height: 6em;
+  background: rgba(0, 0, 0, 0.25);
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+   }
+  #wrappermenu svg {
+    position: absolute;
+    top: 37px;
+    left: 40px; }
+  #wrappermenu ul {
+    list-style: none;
+    float: right;
+    padding-right: 60px; }
+  #wrappermenu li {
+    display: inline-block;
+    text-transform: uppercase; }
+  #wrappermenu a {
+    color: white;
+    font-size: 14.5px;
+    text-decoration: none;
+    padding: 0px 30px 0 30px;
+    font-family: "Lato", sans-serif; }
+
+.fixed {
+  position: fixed;
+  top: 0; }
+
+.newsimage {
+  background-image: url(../image/name.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 35em;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -20; }
+
+.news {
+  width: 100%;
+  height: 30em;
+  border: 1px solid black;
+  box-sizing: border-box;
+  position: relative;
+  margin-top: 33em;
+  display: block; }
+  .news h2 {
+    margin-left: 2em;
+    color: black; }
+  .news p {
+    margin: 0px 50px 0px 50px; }
+
+.selection {
+  position: relative;
+  display: block;
+  color: black;
+  margin-top: 25em;
+  margin-left: 2.3em;
+  text-transform: uppercase;
+  font-size: 25px;
+  font-family: 'Fugaz One', cursive; }
+
+.lists {
+  list-style: none;
+  width: 150px;
+  margin-top: 3em; }
+
+.list li {
+  display: inline-block; }
+
+.conteiners {
+  width: 10em;
+  height: 5em;
+  margin: 0px 20px 0px 20px;
+  display: none;
+  color: black;
+  text-align: center;
+  border: 1px solid black;
+  margin-bottom: 2em; }
+
+.divNews {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  border: 1px solid black;
+  display: block;
+  margin-bottom: 2em; }
+  .divNews h2 {
+    margin-left: 2em;
+    margin-top: 1em;
+    font-family: "Fugaz One", cursive;
+    text-transform: uppercase; }
+
+#divImage {
+  width: 30%;
+  height: 20em;
+  float: right;
+  background-image: url(../image/cool.jpg);
+  background-size: cover; }
+
+.texting {
+  width: 70%; }
+  .texting p {
+    margin: 0 3em 0 3em; }

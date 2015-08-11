@@ -1,0 +1,32 @@
+@import 'import.scss';
+html, body {
+  background-image: url(../image/cool.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+.box {
+  width:70%;
+  height: 89vh;
+  position: absolute;
+  background-color: rgba(225,225,225, 0.55);
+  bottom: 0;
+  left: 50%;
+  margin-left: -35%;
+  h2 {
+    color: black;
+    font-family: $main-font;
+    margin:auto;
+    font-size: 25px;
+    margin-left: 50px;
+    margin-top: 80px;
+    margin-bottom: 50px;
+  }a {
+    color: black;
+    text-decoration: none;
+    font-family: $main-font;
+    margin-left: 50px;
+    padding-top:35px;
+    display: block;
+  }
+}

@@ -1,0 +1,244 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700);
+@import url(http://fonts.googleapis.com/css?family=Poiret+One);
+@import url(http://fonts.googleapis.com/css?family=Nixie+One);
+#imgs img {
+  /*overlays all the imgs */
+  /*You see only the first img, for now*/
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0em;
+  left: 0;
+  transition: 1s;
+  visibility: hidden;
+  z-index: -1;
+  /*we want to show only 1 img at the time*/ }
+
+/*the container */
+#Snav {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0; }
+
+/* where the circles are going to be*/
+#SnavUp {
+  display: block;
+  width: 100%;
+  height: 20%; }
+
+#Scircles {
+  display: block;
+  width: 5%;
+  height: 15%;
+  margin-right: 5%;
+  margin-top: 2%;
+  float: right;
+  /* is going to be on the right side of the slider*/ }
+
+#Scircles ul {
+  margin: 0;
+  float: right;
+  display: block;
+  width: 100%;
+  height: 100%;
+  display: none; }
+
+/*ok , we are done with the SnavUp*/
+#SnavMiddle {
+  display: block;
+  width: 100%;
+  height: 15%;
+  margin-top: 15%;
+  /*this is up to you , where you want the buttons*/ }
+
+/*left button*/
+#Sleft {
+  width: 5%;
+  height: 60%;
+  float: left;
+  margin-left: 3%;
+  opacity: 0.8; }
+
+/*button effect*/
+#Sleft:hover {
+  opacity: 0.8; }
+
+#Sright {
+  width: 5%;
+  height: 60%;
+  float: right;
+  margin-right: 3%;
+  opacity: 0.8; }
+
+#Sright:hover {
+  opacity: 0.8; }
+
+/*now we have to add the info at the bottom of the slider*/
+#SnavBottom {
+  display: block;
+  /*background-color:rgba(0, 0, 0, 0.8);*/
+  width: 100%;
+  height: 10%;
+  position: absolute;
+  bottom: 0;
+  left: 0; }
+
+#SnavBottom p {
+  font: normal 200% Arial;
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin-left: 3%;
+  visibility: hidden; }
+
+/*that's all , now we need to code the slider, the effect*/
+html, body {
+  margin: 0;
+  padding: 0; }
+
+#wrappermenu {
+  width: 100%;
+  height: 6em;
+  background: rgba(0, 0, 0, 0.25);
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  z-index: 10; }
+  #wrappermenu svg {
+    position: absolute;
+    top: 37px;
+    left: 40px; }
+  #wrappermenu ul {
+    list-style: none;
+    float: right;
+    padding-right: 60px; }
+  #wrappermenu li {
+    display: inline-block;
+    text-transform: uppercase; }
+  #wrappermenu a {
+    color: white;
+    font-size: 14.5px;
+    text-decoration: none;
+    padding: 0px 30px 0 30px;
+    font-family: "Lato", sans-serif; }
+
+.fixed {
+  position: fixed;
+  top: 0; }
+
+#name {
+  color: white;
+  text-transform: uppercase;
+  position: relative;
+  font-size: 60px;
+  text-align: center;
+  font-family: 'Poiret One', cursive;
+  font-weight: 900;
+  margin-top: 6em;
+  animation: rotateY 1.5s 1s 1;
+  display: none;
+  position: absolute;
+  width: 100%; }
+
+@keyframes rotateY {
+  0% {
+    transform: rotateY(0deg); }
+
+  50% {
+    transform: rotateY(-180deg); }
+
+  100% {
+    transform: rotateY(-360deg); } }
+
+.conteiner {
+  display: block;
+  display: flex;
+  width: 100%;
+  height: 40em;
+  background-color: rgba(0, 0, 0, 0.95);
+  position: absolute; }
+  .conteiner a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Nixie One', cursive;
+    font-size: 30px; }
+
+.fix {
+  width: 100%;
+  height: 100vh; }
+
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 0; }
+
+.line {
+  width: 100%;
+  height: 15.5em;
+  background: black;
+  top: 0;
+  left: 0; }
+  .line h1 {
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+    padding-top: 3em;
+    font-family: 'Nixie One', cursive; }
+
+.latest {
+  position: absolute;
+  margin-top: 5%;
+  width: 100%; }
+  .latest p {
+    float: left;
+    color: white;
+    font-family: "Lato", sans-serif;
+    font-size: 20px;
+    margin: 0 4em 0 4em; }
+  .latest h3 {
+    text-align: center;
+    margin-top: -0.5em;
+    color: white;
+    font-family: "Lato", sans-serif;
+    text-transform: uppercase;
+    font-size: 30px; }
+  .latest a {
+    font-size: 15px;
+    margin-left: 5.5em; }
+  .latest h2 a {
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    padding-top: 1em;
+    margin-left: -250px;
+    text-transform: uppercase;
+    font-size: 25px; }
+
+.sponsor {
+  width: 100%;
+  height: 11em;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-around; }
+  .sponsor img {
+    height: 3em; }
+.br {
+  width: 80%;
+  margin: auto;
+  height: 3px;
+  background: white;
+  margin-top: 5em;
+}
